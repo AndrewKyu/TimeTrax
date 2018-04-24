@@ -84,7 +84,7 @@
                     <view key="view" contentMode="scaleToFill" id="gyS-j0-QSL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zRo-dL-0Zs"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="xeP-5t-g99"/>
@@ -116,7 +116,7 @@
                     <view key="view" contentMode="scaleToFill" id="xQ1-cj-kU5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="jex-CN-nBu"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="dUj-Ie-O4p"/>
@@ -125,16 +125,30 @@
             </objects>
             <point key="canvasLocation" x="942" y="1672"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="3PR-zG-h9R">
             <objects>
-                <viewController id="thm-LQ-M47" sceneMemberID="viewController">
+                <viewController id="thm-LQ-M47" customClass="SettingsViewController" customModule="TimeTrax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kTo-PT-Q98">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TP-eh-VIC">
+                                <rect key="frame" x="160" y="487" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="thm-LQ-M47" eventType="touchUpInside" id="YNd-hP-WTc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zdG-jk-JGj"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="ewQ-nG-gEe"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="8OU-sK-lj3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xl0-6m-SlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,5 +258,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OBQ-84-K9l"/>
+        <segue reference="8OU-sK-lj3"/>
     </inferredMetricsTieBreakers>
 </document>

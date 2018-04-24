@@ -15,6 +15,7 @@
 		1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */; };
 		1F3FFEEE208EA9A500899E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */; };
 		1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */; };
+		1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */; };
 		7A8825128D856817B4BBA196 /* Pods_TimeTrax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTrax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B928AE1CC4E297AEBA20FEBB /* Pods-TimeTrax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				1F3FFEDB208EA31900899E70 /* ViewController.swift */,
 				1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */,
 				1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */,
+				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
 				1F3FFEE0208EA31B00899E70 /* Assets.xcassets */,
 				1F3FFEE2208EA31B00899E70 /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,
+				1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */,
 				1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +387,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WA6Y7KBQJ;
 				INFOPLIST_FILE = TimeTrax/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndrewKyu.TimeTrax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -399,7 +406,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WA6Y7KBQJ;
 				INFOPLIST_FILE = TimeTrax/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndrewKyu.TimeTrax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
