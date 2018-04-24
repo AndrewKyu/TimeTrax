@@ -8,5 +8,6 @@ target 'TimeTrax' do
   # Pods for TimeTrax
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'FSCalendar'
 
 end
