@@ -1,5 +1,5 @@
 //
-//  RegistrationViewController.swift
+//  HomeViewController.swift
 //  TimeTrax
 //
 //  Created by Andrew Kyu on 4/23/18.
@@ -8,22 +8,8 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
-    
-    
-    @IBAction func backButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToLogin", sender: self)
-    }
-    
-    @IBOutlet weak var emailTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UIView!
-    
-    
-    @IBAction func registerButtonTapped(_ sender: Any) {
-        
-    }
-    
+class HomeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
