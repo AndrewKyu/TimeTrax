@@ -22,7 +22,15 @@ class RegistrationViewController: UIViewController {
     
     
     @IBAction func registerButtonTapped(_ sender: Any) {
+        
         if let email = emailTextField.text, let pass = passwordTextField.text{
+//            let alert = UIAlertController(title: "Error", message: "You did not fill out all fields", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+//
+//            if email == nil{
+//                self.present(alert, animated: true)
+//            }
+            
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
                 self.performSegue(withIdentifier: "goToHome", sender: self)
             }
