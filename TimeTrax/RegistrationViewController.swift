@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegistrationViewController: UIViewController {
     
@@ -17,11 +18,17 @@ class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var passwordTextField: UIView!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     
     @IBAction func registerButtonTapped(_ sender: Any) {
-        
+        if let email = emailTextField.text, let pass = passwordTextField.text{
+            Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
+                self.performSegue(withIdentifier: "goToHome", sender: self)
+            }
+        }else{
+            //Error: check error and show message
+        }
     }
     
     override func viewDidLoad() {

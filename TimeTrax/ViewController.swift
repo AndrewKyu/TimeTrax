@@ -10,11 +10,28 @@ import UIKit
 import FirebaseAuth
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        if let email = emailTextField.text, let pass = passwordTextField.text{
+            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+                if let u = user{
+                    self.performSegue(withIdentifier: "goToHome", sender: self)
+                }else{
+                    //check for error
+                }
+            }
+        }
+    }
     
     @IBAction func goToRegisterButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "goToRegister", sender: self)
     }
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
