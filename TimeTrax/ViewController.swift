@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        //stores anything from emailTextField and passwordTextField into email
         if let email = emailTextField.text, let pass = passwordTextField.text{
             Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
                 if let u = user{
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goToRegisterButtonTapped(_ sender: Any) {
+        //when register button is pressed, it'll go to the RegistrationViewController
         self.performSegue(withIdentifier: "goToRegister", sender: self)
     }
     
