@@ -9,20 +9,26 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
+    
+    @IBOutlet weak var Password_textField: UITextField!
+    @IBOutlet weak var email_textField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var Log_in_box: UIView!
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToHome", sender: self)
         //stores anything from emailTextField and passwordTextField into email
-        if let email = emailTextField.text, let pass = passwordTextField.text{
-            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
-                if let u = user{
-                    self.performSegue(withIdentifier: "goToHome", sender: self)
-                }else{
-                    //check for error
-                }
-            }
-        }
+//        if let email = emailTextField.text, let pass = passwordTextField.text{
+//            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+//                if let u = user{
+//                    
+//                }else{
+//                    //check for error
+//                }
+//            }
+//        }
     }
     
     @IBAction func goToRegisterButtonTapped(_ sender: Any) {
@@ -37,6 +43,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "le-clock.jpg")!)
+        Log_in_box.layer.shadowOpacity = 0.7
+        Log_in_box.layer.shadowOffset = CGSize(width: 3, height: 3)
+        Log_in_box.layer.shadowRadius = 15.0
+        Log_in_box.layer.shadowColor = UIColor.darkGray.cgColor
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -44,7 +55,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let y_offset = Log_in_box.layer.position.y/2.3
+        scrollView.setContentOffset(CGPoint(x:0.0,y: y_offset), animated: true)
+        print("started editing")
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x:0.0,y:0.0), animated: true)
+    }
 
 }
 

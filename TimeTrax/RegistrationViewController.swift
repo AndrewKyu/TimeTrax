@@ -9,11 +9,17 @@
 import UIKit
 import FirebaseAuth
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var rpassword_textField: UIScrollView!
+    @IBOutlet weak var password_textField: UIScrollView!
+    @IBOutlet weak var name_textField: UIScrollView!
+    @IBOutlet weak var Log_in_box: UIView!
+    @IBOutlet weak var email_textField: UIScrollView!
     @IBAction func backButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToLogin", sender: self)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -41,6 +47,11 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "le-clock.jpg")!)
+        Log_in_box.layer.shadowOpacity = 0.7
+        Log_in_box.layer.shadowOffset = CGSize(width: 3, height: 3)
+        Log_in_box.layer.shadowRadius = 15.0
+        Log_in_box.layer.shadowColor = UIColor.darkGray.cgColor
 
         // Do any additional setup after loading the view.
     }
@@ -50,6 +61,20 @@ class RegistrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let y_offset = Log_in_box.layer.position.y/2.3
+        scrollView.setContentOffset(CGPoint(x:0.0,y: y_offset), animated: true)
+        print("started editing")
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x:0.0,y:0.0), animated: true)
+    }
 
     /*
     // MARK: - Navigation
