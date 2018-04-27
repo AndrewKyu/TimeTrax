@@ -19,7 +19,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Log_in_box: UIView!
     @IBOutlet weak var email_textField: UIScrollView!
     @IBAction func backButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToLogin", sender: self)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBOutlet weak var emailTextField: UITextField!

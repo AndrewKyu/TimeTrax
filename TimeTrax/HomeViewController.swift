@@ -26,7 +26,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.dueDate.text = dateformatter.string(from: datething)
         cell.taskName.text = structArray[indexPath.row].name
         cell.prioritySymbol.text = structArray[indexPath.row].priority.rawValue
-    
         return cell
     }
     
