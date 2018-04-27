@@ -358,9 +358,6 @@
                                         <state key="normal" title="Change Password">
                                             <color key="titleColor" red="0.97857372867356662" green="1" blue="0.98343892315868431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="changePasswordButtonPress:" destination="thm-LQ-M47" eventType="touchUpInside" id="3ZI-6h-cIP"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afq-JM-nbu">
                                         <rect key="frame" x="0.0" y="46" width="345" height="36"/>
@@ -369,9 +366,6 @@
                                         <state key="normal" title="Change Username">
                                             <color key="titleColor" red="0.97857372870000003" green="1" blue="0.98343892320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="changePasswordButtonPress:" destination="thm-LQ-M47" eventType="touchUpInside" id="CkP-9b-MEm"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUA-34-Heb">
                                         <rect key="frame" x="0.0" y="92" width="345" height="36"/>
@@ -381,7 +375,6 @@
                                             <color key="titleColor" red="0.97857372870000003" green="1" blue="0.98343892320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="changePasswordButtonPress:" destination="thm-LQ-M47" eventType="touchUpInside" id="tDA-BX-8Ms"/>
                                             <action selector="logoutButtonPressed:" destination="thm-LQ-M47" eventType="touchUpInside" id="VKY-DW-i4O"/>
                                         </connections>
                                     </button>
@@ -453,28 +446,10 @@
                         <viewLayoutGuide key="safeArea" id="zdG-jk-JGj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="ewQ-nG-gEe"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="8OU-sK-lj3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xl0-6m-SlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2024.8" y="1671.8140929535234"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Kaq-Uu-nL0">
-            <objects>
-                <viewController id="NbK-cG-Hiv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h96-x4-Wu3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ddu-mI-qKK"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zLI-7Y-xK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2129" y="2391"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="l28-KD-AkQ">
@@ -580,7 +555,7 @@
                                         <constraints>
                                             <constraint firstItem="OCI-RT-ZsN" firstAttribute="trailing" secondItem="et7-jE-Jbh" secondAttribute="trailing" id="4U1-B9-kVb"/>
                                             <constraint firstItem="OBc-Hd-JUJ" firstAttribute="top" secondItem="QMh-1b-0bF" secondAttribute="topMargin" id="8X8-IC-dNx"/>
-                                            <constraint firstItem="et7-jE-Jbh" firstAttribute="trailing" secondItem="5VJ-xy-9SZ" secondAttribute="trailing" id="Dl8-Ko-3RB"/>
+                                            <constraint firstItem="et7-jE-Jbh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5VJ-xy-9SZ" secondAttribute="trailing" id="Dl8-Ko-3RB"/>
                                             <constraint firstItem="G71-Br-8YN" firstAttribute="top" secondItem="OBc-Hd-JUJ" secondAttribute="bottom" constant="10" id="FeG-Cf-1La"/>
                                             <constraint firstItem="OCI-RT-ZsN" firstAttribute="top" secondItem="G71-Br-8YN" secondAttribute="bottom" constant="12" id="Fu0-8G-18K"/>
                                             <constraint firstItem="cgn-Uj-mnG" firstAttribute="leading" secondItem="QMh-1b-0bF" secondAttribute="leading" id="HGB-OC-P5S"/>
@@ -588,7 +563,7 @@
                                             <constraint firstItem="et7-jE-Jbh" firstAttribute="top" secondItem="OCI-RT-ZsN" secondAttribute="bottom" constant="12" id="K71-9B-BgF"/>
                                             <constraint firstItem="OBc-Hd-JUJ" firstAttribute="centerX" secondItem="G71-Br-8YN" secondAttribute="centerX" id="KfP-iz-Xap"/>
                                             <constraint firstItem="G71-Br-8YN" firstAttribute="trailing" secondItem="OCI-RT-ZsN" secondAttribute="trailing" id="L9j-QC-ZEI"/>
-                                            <constraint firstItem="et7-jE-Jbh" firstAttribute="leading" secondItem="5VJ-xy-9SZ" secondAttribute="leading" id="MaP-xz-LKW"/>
+                                            <constraint firstItem="et7-jE-Jbh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5VJ-xy-9SZ" secondAttribute="leading" id="MaP-xz-LKW"/>
                                             <constraint firstItem="5VJ-xy-9SZ" firstAttribute="top" secondItem="et7-jE-Jbh" secondAttribute="bottom" constant="12" id="Yr4-6e-af5"/>
                                             <constraint firstItem="G71-Br-8YN" firstAttribute="leading" secondItem="OCI-RT-ZsN" secondAttribute="leading" id="deL-i3-Zyw"/>
                                             <constraint firstItem="OCI-RT-ZsN" firstAttribute="leading" secondItem="et7-jE-Jbh" secondAttribute="leading" id="gcz-eF-l5S"/>
@@ -658,7 +633,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OBQ-84-K9l"/>
-        <segue reference="Uue-dc-uU6"/>
-        <segue reference="8OU-sK-lj3"/>
     </inferredMetricsTieBreakers>
 </document>

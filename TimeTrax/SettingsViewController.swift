@@ -12,13 +12,7 @@ import FirebaseAuth
 class SettingsViewController: UIViewController {
     
     
-    
-    
-//    @IBAction func changePasswordButtonPress(_ sender: Any) {
-//        self.performSegue(withIdentifier: "goToPasswordChange", sender: self)
-//    }
-
-    @IBAction func logoutButtonPressed(_ sender: Any) {
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
         do{
             try Auth.auth().signOut()
             self.dismiss(animated: true, completion: nil)
@@ -26,6 +20,13 @@ class SettingsViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
+    
+//    @IBAction func changePasswordButtonPress(_ sender: Any) {
+//        self.performSegue(withIdentifier: "goToPasswordChange", sender: self)
+//    }
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
