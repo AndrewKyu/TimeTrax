@@ -17,6 +17,8 @@
 		1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */; };
 		1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */; };
 		7A8825128D856817B4BBA196 /* Pods_TimeTrax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */; };
+		BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */; };
+		BBC1A35E2092FF50006FB62F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTrax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B928AE1CC4E297AEBA20FEBB /* Pods-TimeTrax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.debug.xcconfig"; sourceTree = "<group>"; };
+		BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPWViewController.swift; sourceTree = "<group>"; };
+		BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +79,12 @@
 				1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */,
 				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
+				BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */,
 				1F3FFEE0208EA31B00899E70 /* Assets.xcassets */,
 				1F3FFEE2208EA31B00899E70 /* LaunchScreen.storyboard */,
 				1F3FFEE5208EA31B00899E70 /* Info.plist */,
 				1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */,
+				BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */,
 			);
 			path = TimeTrax;
 			sourceTree = "<group>";
@@ -112,7 +118,6 @@
 				1F3FFED3208EA31900899E70 /* Frameworks */,
 				1F3FFED4208EA31900899E70 /* Resources */,
 				364FB880098D9F5429FDB8CD /* [CP] Embed Pods Frameworks */,
-				1B7CB98C0B5DF9B7CA93139E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,21 +176,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B7CB98C0B5DF9B7CA93139E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		364FB880098D9F5429FDB8CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC1A35E2092FF50006FB62F /* TaskTableViewCell.swift in Sources */,
+				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,

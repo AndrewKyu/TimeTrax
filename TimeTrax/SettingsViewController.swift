@@ -10,8 +10,14 @@ import UIKit
 import FirebaseAuth
 
 class SettingsViewController: UIViewController {
-
     
+    
+    
+    
+//    @IBAction func changePasswordButtonPress(_ sender: Any) {
+//        self.performSegue(withIdentifier: "goToPasswordChange", sender: self)
+//    }
+
     @IBAction func logoutButtonPressed(_ sender: Any) {
         do{
             try Auth.auth().signOut()
