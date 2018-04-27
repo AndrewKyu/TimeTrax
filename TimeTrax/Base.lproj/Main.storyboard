@@ -446,7 +446,6 @@
                         <outlet property="password_textField" destination="KnI-fq-cL8" id="hUG-wU-s2y"/>
                         <outlet property="rpassword_textField" destination="KnI-fq-cL8" id="AKX-A1-ETQ"/>
                         <outlet property="scrollView" destination="KnI-fq-cL8" id="ZrN-dK-ECH"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="goToLogin" animates="NO" id="C8N-s4-gcu"/>
                         <segue destination="KV6-le-rDw" kind="show" identifier="goToHome" id="OBQ-84-K9l"/>
                     </connections>
                 </viewController>
@@ -478,6 +477,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OBQ-84-K9l"/>
-        <segue reference="C8N-s4-gcu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,7 +15,7 @@ class SettingsViewController: UIViewController {
     @IBAction func logoutButtonPressed(_ sender: Any) {
         do{
             try Auth.auth().signOut()
-            performSegue(withIdentifier: "goToLogin", sender: self)
+            self.dismiss(animated: true, completion: nil)
         }catch let error as NSError{
             print(error.localizedDescription)
         }
