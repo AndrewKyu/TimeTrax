@@ -14,6 +14,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return structArray.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell") as! TaskTableViewCell
         let datething = structArray[indexPath.row].dueDate
@@ -22,11 +26,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.dueDate.text = dateformatter.string(from: datething)
         cell.taskName.text = structArray[indexPath.row].name
         cell.prioritySymbol.text = structArray[indexPath.row].priority.rawValue
-        //cell.cellView.layer.cornerRadius = cell.cellView.frame
-        
         return cell
     }
     
+    @IBOutlet weak var TaskButton: UIButton!
     
     @IBOutlet weak var taskViewController: UITableView!
     
