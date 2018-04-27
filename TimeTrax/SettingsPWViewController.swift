@@ -1,32 +1,15 @@
 //
-//  SettingsViewController.swift
+//  SettingsPWViewController.swift
 //  TimeTrax
 //
-//  Created by Andrew Kyu on 4/23/18.
+//  Created by John Tumath on 4/26/18.
 //  Copyright © 2018 AndrewKyuProjects. All rights reserved.
 //
 
 import UIKit
-import FirebaseAuth
 
-class SettingsViewController: UIViewController {
-    
-    
-    
-    
-//    @IBAction func changePasswordButtonPress(_ sender: Any) {
-//        self.performSegue(withIdentifier: "goToPasswordChange", sender: self)
-//    }
+class SettingsPWViewController: UIViewController {
 
-    @IBAction func logoutButtonPressed(_ sender: Any) {
-        do{
-            try Auth.auth().signOut()
-            performSegue(withIdentifier: "goToLogin", sender: self)
-        }catch let error as NSError{
-            print(error.localizedDescription)
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
