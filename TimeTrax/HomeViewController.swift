@@ -94,4 +94,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.priority = priority
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .default
+    }
 }
