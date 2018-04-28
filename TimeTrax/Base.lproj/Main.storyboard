@@ -116,7 +116,6 @@
                                     <constraint firstAttribute="trailing" secondItem="44x-cf-dF9" secondAttribute="trailing" constant="-28" id="ObW-Yi-Fqp"/>
                                     <constraint firstItem="44x-cf-dF9" firstAttribute="centerY" secondItem="pnR-YX-lYT" secondAttribute="centerY" id="R1u-Z3-qpt"/>
                                     <constraint firstAttribute="bottom" secondItem="44x-cf-dF9" secondAttribute="bottom" constant="354" id="T8w-2H-IaD"/>
-                                    <constraint firstItem="44x-cf-dF9" firstAttribute="top" relation="lessThanOrEqual" secondItem="pnR-YX-lYT" secondAttribute="top" constant="195.5" id="kVv-QJ-4k1"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
