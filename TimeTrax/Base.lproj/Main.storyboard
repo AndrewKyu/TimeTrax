@@ -184,20 +184,13 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mG-wg-hJS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="78"/>
-                                                        </button>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="9mG-wg-hJS" secondAttribute="bottom" id="0Wc-Ic-kz9"/>
                                                         <constraint firstItem="71V-qr-Jjx" firstAttribute="leading" secondItem="n0h-zP-bsO" secondAttribute="leadingMargin" id="35S-qh-2Yi"/>
                                                         <constraint firstAttribute="bottom" secondItem="JkL-Hz-sNh" secondAttribute="bottom" constant="8" id="58c-5T-lK6"/>
                                                         <constraint firstItem="wo8-wj-gJK" firstAttribute="leading" secondItem="n0h-zP-bsO" secondAttribute="leading" constant="8" id="8T8-gL-ZIn"/>
-                                                        <constraint firstItem="9mG-wg-hJS" firstAttribute="top" secondItem="n0h-zP-bsO" secondAttribute="top" id="Eb1-ku-YmK"/>
                                                         <constraint firstItem="71V-qr-Jjx" firstAttribute="top" secondItem="n0h-zP-bsO" secondAttribute="topMargin" id="Fno-V2-FTa"/>
                                                         <constraint firstAttribute="trailing" secondItem="JkL-Hz-sNh" secondAttribute="trailing" constant="8" id="bJJ-2K-ppq"/>
-                                                        <constraint firstItem="9mG-wg-hJS" firstAttribute="leading" secondItem="n0h-zP-bsO" secondAttribute="leading" id="cBr-kO-b5d"/>
-                                                        <constraint firstItem="JkL-Hz-sNh" firstAttribute="leading" secondItem="9mG-wg-hJS" secondAttribute="trailing" id="exk-SS-cTH"/>
                                                         <constraint firstAttribute="bottom" secondItem="wo8-wj-gJK" secondAttribute="bottom" constant="8" id="iUm-Vh-hfB"/>
                                                     </constraints>
                                                 </view>
@@ -229,7 +222,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Dashboard" id="xeP-5t-g99"/>
                     <connections>
-                        <outlet property="TaskButton" destination="9mG-wg-hJS" id="jPq-qm-LUn"/>
                         <outlet property="taskViewController" destination="znC-zR-iaS" id="CHZ-Rp-nsx"/>
                     </connections>
                 </viewController>

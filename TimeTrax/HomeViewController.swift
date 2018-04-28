@@ -29,8 +29,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    @IBOutlet weak var TaskButton: UIButton!
-    
+   
     @IBOutlet weak var taskViewController: UITableView!
     
     //This view is used for displaying the table view listing of all the assigned tasks a user is currently on.
