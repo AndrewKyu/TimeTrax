@@ -10,7 +10,9 @@ import UIKit
 
 class ProjectTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var taskLabel1: UILabel!
+    @IBOutlet weak var groupNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var groupMembersLabel: UILabel!
     
     
     override func awakeFromNib() {

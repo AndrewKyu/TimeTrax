@@ -20,6 +20,7 @@
 		1FFA939F209410EF00914A78 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA939E209410EF00914A78 /* ProjectsViewController.swift */; };
 		1FFA93A1209412BA00914A78 /* CreateProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A0209412BA00914A78 /* CreateProjectsViewController.swift */; };
 		1FFA93A320957E5F00914A78 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */; };
+		1FFA93A52096680700914A78 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A42096680700914A78 /* ProjectModel.swift */; };
 		3F6B94192092DB0000F0C1AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B94182092DB0000F0C1AE /* Images.xcassets */; };
 		7A8825128D856817B4BBA196 /* Pods_TimeTrax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */; };
 		BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */; };
@@ -43,6 +44,7 @@
 		1FFA939E209410EF00914A78 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		1FFA93A0209412BA00914A78 /* CreateProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectsViewController.swift; sourceTree = "<group>"; };
 		1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		1FFA93A42096680700914A78 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		3F6B94182092DB0000F0C1AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTrax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B928AE1CC4E297AEBA20FEBB /* Pods-TimeTrax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */,
 				BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */,
 				3F6B94182092DB0000F0C1AE /* Images.xcassets */,
+				1FFA93A42096680700914A78 /* ProjectModel.swift */,
 			);
 			path = TimeTrax;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 				1F3FFED3208EA31900899E70 /* Frameworks */,
 				1F3FFED4208EA31900899E70 /* Resources */,
 				364FB880098D9F5429FDB8CD /* [CP] Embed Pods Frameworks */,
+				23BC785B74A78078DDD6AAA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +196,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23BC785B74A78078DDD6AAA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		364FB880098D9F5429FDB8CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +221,7 @@
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -209,6 +229,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +267,7 @@
 				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
 				1FFA939F209410EF00914A78 /* ProjectsViewController.swift in Sources */,
 				1FFA93A1209412BA00914A78 /* CreateProjectsViewController.swift in Sources */,
+				1FFA93A52096680700914A78 /* ProjectModel.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,
@@ -399,10 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WA6Y7KBQJ;
 				INFOPLIST_FILE = TimeTrax/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AndrewKyu.TimeTrax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -418,10 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WA6Y7KBQJ;
 				INFOPLIST_FILE = TimeTrax/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AndrewKyu.TimeTrax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
