@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F36A9F4209409CF006D5BE2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36A9F3209409CF006D5BE2 /* RoundButton.swift */; };
 		1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFED9208EA31900899E70 /* AppDelegate.swift */; };
 		1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEDB208EA31900899E70 /* ViewController.swift */; };
 		1F3FFEDF208EA31900899E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3FFEDD208EA31900899E70 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 		1F3FFEEE208EA9A500899E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */; };
 		1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */; };
 		1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */; };
+		1FFA939F209410EF00914A78 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA939E209410EF00914A78 /* ProjectsViewController.swift */; };
+		1FFA93A1209412BA00914A78 /* CreateProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A0209412BA00914A78 /* CreateProjectsViewController.swift */; };
+		1FFA93A320957E5F00914A78 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */; };
 		3F6B94192092DB0000F0C1AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B94182092DB0000F0C1AE /* Images.xcassets */; };
 		7A8825128D856817B4BBA196 /* Pods_TimeTrax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */; };
 		BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */; };
@@ -24,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1EB621F8B31E7A638B427AB4 /* Pods-TimeTrax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.release.xcconfig"; sourceTree = "<group>"; };
+		1F36A9F3209409CF006D5BE2 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		1F3FFED6208EA31900899E70 /* TimeTrax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3FFED9208EA31900899E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3FFEDB208EA31900899E70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +40,9 @@
 		1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1FFA939E209410EF00914A78 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		1FFA93A0209412BA00914A78 /* CreateProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectsViewController.swift; sourceTree = "<group>"; };
+		1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		3F6B94182092DB0000F0C1AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTrax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B928AE1CC4E297AEBA20FEBB /* Pods-TimeTrax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +88,10 @@
 				1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */,
 				1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */,
 				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
+				1F36A9F3209409CF006D5BE2 /* RoundButton.swift */,
+				1FFA939E209410EF00914A78 /* ProjectsViewController.swift */,
+				1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */,
+				1FFA93A0209412BA00914A78 /* CreateProjectsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
 				BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */,
 				1F3FFEE0208EA31B00899E70 /* Assets.xcassets */,
@@ -229,11 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F36A9F4209409CF006D5BE2 /* RoundButton.swift in Sources */,
 				BBC1A35E2092FF50006FB62F /* TaskTableViewCell.swift in Sources */,
 				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
+				1FFA939F209410EF00914A78 /* ProjectsViewController.swift in Sources */,
+				1FFA93A1209412BA00914A78 /* CreateProjectsViewController.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,
+				1FFA93A320957E5F00914A78 /* ProjectTableViewCell.swift in Sources */,
 				1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */,
 				1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */,
 			);

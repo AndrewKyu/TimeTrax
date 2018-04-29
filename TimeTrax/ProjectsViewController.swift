@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ProjectsViewController: UIViewController {
+class ProjectsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBAction func createProjectButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToCreateProject", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,6 +10,11 @@ import UIKit
 
 class CreateProjectsViewController: UIViewController {
 
+    @IBAction func backToProjectsViewButtonTapped(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
