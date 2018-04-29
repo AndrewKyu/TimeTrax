@@ -6,8 +6,11 @@ target 'TimeTrax' do
   use_frameworks!
 
   # Pods for TimeTrax
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
   pod 'FSCalendar'
+  pod 'SDWebImage'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
 
 end

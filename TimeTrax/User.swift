@@ -42,9 +42,9 @@ extension User: DocumentSerializable {
             let profilePicture = dictionary["profilePicture"] as? URL else { return nil }
     
     
-    self.init(lastName: lastName,
+        self.init( email: email,
               firstName: firstName,
-              email: email,
+              lastName: lastName,
               phoneNumber: phoneNumber,
               jobTitle: jobTitle,
               admin: admin,
