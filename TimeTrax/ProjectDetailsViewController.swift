@@ -104,10 +104,10 @@ class ProjectDetailsViewController: UIViewController, UITableViewDataSource, UIT
 }
 
 class TeamMemberViewCell: UITableViewCell {
-    @IBOutlet var UserName: UILabel!
+//    @IBOutlet var UserName: UILabel!
     
     func populate(user: User){
-        UserName.text = user.firstName + " " + user.lastName
+//        UserName.text = user.firstName + " " + user.lastName
     }
     
     

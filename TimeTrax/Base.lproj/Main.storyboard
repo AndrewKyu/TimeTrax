@@ -310,28 +310,13 @@
                                 <rect key="frame" x="16" y="451" width="343" height="196"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TeamMemberCell" id="qrP-7g-TiM" customClass="TeamMemberViewCell" customModule="TimeTrax" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="N9Y-cw-2d5">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qrP-7g-TiM" id="NUI-rq-Fhj" customClass="TeamMemberViewCell" customModule="TimeTrax" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N9Y-cw-2d5" id="R5X-Pf-0Dl" customClass="TeamMemberViewCell" customModule="TimeTrax" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsC-Pp-7kk">
-                                                    <rect key="frame" x="25" y="12" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="SsC-Pp-7kk" firstAttribute="centerY" secondItem="NUI-rq-Fhj" secondAttribute="centerY" id="QEf-at-0Bc"/>
-                                                <constraint firstItem="SsC-Pp-7kk" firstAttribute="leading" secondItem="NUI-rq-Fhj" secondAttribute="leading" constant="25" id="XFA-L8-p8I"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="UserName" destination="SsC-Pp-7kk" id="MYW-qy-Lmu"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -363,7 +348,6 @@
                         <outlet property="EndDate" destination="qKz-yj-NRm" id="uIW-VR-xfK"/>
                         <outlet property="NavBar" destination="5OR-LW-wVu" id="i7m-gF-5sI"/>
                         <outlet property="ProjectDescription" destination="ZUV-Du-Ehp" id="8vX-ul-C2z"/>
-                        <outlet property="TeamMembersCell" destination="qrP-7g-TiM" id="KNa-pB-1nw"/>
                         <outlet property="TeamMembersTable" destination="gf4-f1-MnF" id="mWI-zL-dBJ"/>
                         <outlet property="startDate" destination="pgb-DC-gVs" id="AzL-dc-lJI"/>
                         <outlet property="tableView" destination="gf4-f1-MnF" id="TBh-Tt-FCq"/>
