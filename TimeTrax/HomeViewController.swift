@@ -24,6 +24,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 100
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showTaskDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? TaskDetailViewController{
+            destination.task = structArray[(taskViewController.indexPathForSelectedRow?.row)!]
+        }
+            
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell") as! TaskTableViewCell
         let datething = structArray[indexPath.row].dueDate
@@ -31,7 +42,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         dateformatter.dateStyle = DateFormatter.Style.short
         cell.dueDate.text = dateformatter.string(from: datething)
         cell.taskName.text = structArray[indexPath.row].name
-        cell.prioritySymbol.text = structArray[indexPath.row].priority.rawValue
+        cell.prioritySymbol.text = String (structArray[indexPath.row].priority)
         cell.projectName.text = structArray[indexPath.row].projectName
         return cell
     }
@@ -76,32 +87,29 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     
     var structArray =
-        [taskType(taskName: "Task 137", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task 140", projectName: "Homework",taskDueDate: Date(), taskprirority: Priority.standard),
-     taskType(taskName: "Task 137B", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task 195A", projectName: "Senior Project",taskDueDate: Date(), taskprirority: Priority.standard),
-     taskType(taskName: "Task 137C", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task 166", projectName: "Homework",taskDueDate: Date(), taskprirority: Priority.standard),
-     taskType(taskName: "Task 137D", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task Sleep", projectName: "Self",taskDueDate: Date(), taskprirority: Priority.low),
-     taskType(taskName: "Task 137E", projectName: "Swift Project", taskDueDate: Date(), taskprirority: Priority.high)
+        [taskType(taskName: "Task 137", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task 140", projectName: "Homework",taskDueDate: Date(), taskprirority: 2),
+         taskType(taskName: "Task 137B", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task 195A", projectName: "Senior Project",taskDueDate: Date(), taskprirority: 2),
+         taskType(taskName: "Task 137C", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task 166", projectName: "Homework",taskDueDate: Date(), taskprirority: 2),
+         taskType(taskName: "Task 137D", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task Sleep", projectName: "Self",taskDueDate: Date(), taskprirority: 3),
+         taskType(taskName: "Task 137E", projectName: "Swift Project", taskDueDate: Date(), taskprirority: 1)
     ]
      
 
-    enum Priority:String{
-        case low
-        case high
-        case standard
-    }
-    struct taskType{
+}
+
+//Class to hold task data
+
+    class taskType{
         var name: String
         var dueDate: Date
-        var priority: Priority
+        var priority: Int
         var projectName: String
         
-
-        
-        init(taskName name:String, projectName pjName:String, taskDueDate dueDate: Date, taskprirority priority:Priority){
+        init(taskName name:String, projectName pjName:String, taskDueDate dueDate: Date, taskprirority priority:Int){
         
             self.name = name
             self.dueDate = dueDate
@@ -109,7 +117,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.projectName = pjName
         }
     }
-}
+
+// View for Task Cell
 
 class TaskTableViewCell: UITableViewCell {
     
