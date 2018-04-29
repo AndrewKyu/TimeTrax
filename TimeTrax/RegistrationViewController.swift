@@ -36,9 +36,12 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
 //            if email == nil{
 //                self.present(alert, animated: true)
 //            }
-            
+            weak var pvc = self.presentingViewController
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
-                self.performSegue(withIdentifier: "goToHome", sender: self)
+                self.dismiss(animated: false, completion: {
+                    pvc?.performSegue(withIdentifier: "goToHome", sender: nil)
+                })
+
             }
         }else{
             //Error: check error and show message

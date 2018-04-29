@@ -41,9 +41,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "le-clock.jpg")!)
+        self.setNeedsStatusBarAppearanceUpdate()
         Log_in_box.layer.shadowOpacity = 0.7
         Log_in_box.layer.shadowOffset = CGSize(width: 3, height: 3)
         Log_in_box.layer.shadowRadius = 15.0
@@ -68,6 +70,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         scrollView.setContentOffset(CGPoint(x:0.0,y:0.0), animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
     }
 
 }
