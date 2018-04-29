@@ -101,22 +101,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 }
 
-//Class to hold task data
 
-    class taskType{
-        var name: String
-        var dueDate: Date
-        var priority: Int
-        var projectName: String
-        
-        init(taskName name:String, projectName pjName:String, taskDueDate dueDate: Date, taskprirority priority:Int){
-        
-            self.name = name
-            self.dueDate = dueDate
-            self.priority = priority
-            self.projectName = pjName
-        }
-    }
 
 // View for Task Cell
 
