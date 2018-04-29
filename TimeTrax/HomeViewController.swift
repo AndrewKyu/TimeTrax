@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import FirebaseAuthUI
+import FirebaseGoogleAuthUI
+import FirebaseFirestore
 import FSCalendar
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    @IBOutlet weak var taskViewController: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return structArray.count
     }
@@ -26,11 +32,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.dueDate.text = dateformatter.string(from: datething)
         cell.taskName.text = structArray[indexPath.row].name
         cell.prioritySymbol.text = structArray[indexPath.row].priority.rawValue
+        cell.projectName.text = structArray[indexPath.row].projectName
         return cell
     }
     
    
-    @IBOutlet weak var taskViewController: UITableView!
+    
     
     //This view is used for displaying the table view listing of all the assigned tasks a user is currently on.
 
@@ -38,10 +45,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         taskViewController.delegate = self
         taskViewController.dataSource = self
-
-        // Do any additional setup after loading the view.
+        
+        //Navigation Bar Text, Color settings
+    
+        navigationController?.navigationBar.barTintColor =
+            UIColor(red:0.90, green:0.19, blue:0.19, alpha:1.0)
+        navigationController?.navigationBar.isTranslucent = false
+        
+        // TODO: Database
+        //query = baseQuery()
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,15 +76,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     
     var structArray =
-    [taskType(taskName: "Task 137", taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task 140", taskDueDate: Date(), taskprirority: Priority.standard),
-     taskType(taskName: "Task 137B", taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task 195A", taskDueDate: Date(), taskprirority: Priority.standard),
-     taskType(taskName: "Task 137C", taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task 166", taskDueDate: Date(), taskprirority: Priority.standard),
-     taskType(taskName: "Task 137D", taskDueDate: Date(), taskprirority: Priority.high),
-     taskType(taskName: "Task Sleep", taskDueDate: Date(), taskprirority: Priority.low),
-     taskType(taskName: "Task 137E", taskDueDate: Date(), taskprirority: Priority.high)
+        [taskType(taskName: "Task 137", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
+     taskType(taskName: "Task 140", projectName: "Homework",taskDueDate: Date(), taskprirority: Priority.standard),
+     taskType(taskName: "Task 137B", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
+     taskType(taskName: "Task 195A", projectName: "Senior Project",taskDueDate: Date(), taskprirority: Priority.standard),
+     taskType(taskName: "Task 137C", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
+     taskType(taskName: "Task 166", projectName: "Homework",taskDueDate: Date(), taskprirority: Priority.standard),
+     taskType(taskName: "Task 137D", projectName: "Swift Project",taskDueDate: Date(), taskprirority: Priority.high),
+     taskType(taskName: "Task Sleep", projectName: "Self",taskDueDate: Date(), taskprirority: Priority.low),
+     taskType(taskName: "Task 137E", projectName: "Swift Project", taskDueDate: Date(), taskprirority: Priority.high)
     ]
      
 
@@ -84,14 +97,36 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         var name: String
         var dueDate: Date
         var priority: Priority
+        var projectName: String
         
 
         
-        init(taskName name:String, taskDueDate dueDate: Date, taskprirority priority:Priority){
+        init(taskName name:String, projectName pjName:String, taskDueDate dueDate: Date, taskprirority priority:Priority){
         
             self.name = name
             self.dueDate = dueDate
             self.priority = priority
+            self.projectName = pjName
         }
     }
 }
+
+class TaskTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var projectName: UILabel!
+    @IBOutlet weak var prioritySymbol: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
+    @IBOutlet weak var taskName: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+}
+
