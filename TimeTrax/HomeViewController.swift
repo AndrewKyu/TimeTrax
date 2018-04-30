@@ -60,7 +60,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         reference.observeSingleEvent(of: DataEventType.value) { (snapshot) in
             //print(snapshot.value)
             guard let tasksDictionary = snapshot.value as? [String: Any] else{ return }
-            //print(projectsDictionary)
+            print(tasksDictionary)
             
             //clears out array
             self.tasks = []
@@ -135,16 +135,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     
 
@@ -187,13 +177,5 @@ class TaskTableViewCell: UITableViewCell {
     }
     
 
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        UIApplication.shared.statusBarStyle = .default
-//    }
-//
-//    override var preferredStatusBarStyle: UIStatusBarStyle{
-//        return .default
-//    }
 }
 
