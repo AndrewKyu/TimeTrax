@@ -16,7 +16,7 @@ class TaskDetailViewController: UIViewController {
     @IBOutlet weak var taskName: UILabel!
     @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var startDate: UILabel!
-    @IBOutlet weak var endDate: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
     @IBOutlet weak var totalTime: UILabel!
     @IBOutlet weak var taskUserList: UILabel!
     @IBOutlet weak var taskDescription: UILabel!
@@ -27,11 +27,9 @@ class TaskDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        taskName.text = "Task: "
-        taskName.text?.append((task?.name)!)
-        projectName.text = "Project: "
-        projectName.text?.append((task?.projectName)!)
-        
+        taskName.text = task?.name
+        projectName.text = "Project: \(task?.projectName ?? "")"
+        dueDate.text = "Due Date: \(task?.dueDate)"      
         
     }
 

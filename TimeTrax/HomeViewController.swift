@@ -40,11 +40,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let datething = structArray[indexPath.row].dueDate
         let dateformatter = DateFormatter()
         dateformatter.dateStyle = DateFormatter.Style.short
-        cell.dueDate.text = dateformatter.string(from: datething)
+        cell.dueDate.text = dateformatter.string(from: datething as Date)
         cell.taskName.text = structArray[indexPath.row].name
         cell.prioritySymbol.text = String (structArray[indexPath.row].priority)
         cell.projectName.text = structArray[indexPath.row].projectName
         return cell
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .default
     }
     
    
@@ -59,9 +68,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         //Navigation Bar Text, Color settings
     
-        navigationController?.navigationBar.barTintColor =
-            UIColor(red:0.90, green:0.19, blue:0.19, alpha:1.0)
-        navigationController?.navigationBar.isTranslucent = false
+//        navigationController?.navigationBar.barTintColor =
+//            UIColor(red:0.90, green:0.19, blue:0.19, alpha:1.0)
+//        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.tintColor = UIColor.white
         
         // TODO: Database
         //query = baseQuery()
@@ -87,15 +97,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     
     var structArray =
-        [taskType(taskName: "Task 137", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task 140", projectName: "Homework",taskDueDate: Date(), taskprirority: 2),
-         taskType(taskName: "Task 137B", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task 195A", projectName: "Senior Project",taskDueDate: Date(), taskprirority: 2),
-         taskType(taskName: "Task 137C", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task 166", projectName: "Homework",taskDueDate: Date(), taskprirority: 2),
-         taskType(taskName: "Task 137D", projectName: "Swift Project",taskDueDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task Sleep", projectName: "Self",taskDueDate: Date(), taskprirority: 3),
-         taskType(taskName: "Task 137E", projectName: "Swift Project", taskDueDate: Date(), taskprirority: 1)
+        [taskType(taskName: "Task 137", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task 140", inProject: "Homework",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
+         taskType(taskName: "Task 137B", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task 195A", inProject: "Senior Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
+         taskType(taskName: "Task 137C", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task 166", inProject: "Homework",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
+         taskType(taskName: "Task 137D", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
+         taskType(taskName: "Task Sleep", inProject: "Self",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 3),
+         taskType(taskName: "Task 137E", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1)
     ]
      
 
@@ -123,13 +133,6 @@ class TaskTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.shared.statusBarStyle = .default
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .default
-    }
+
 }
 
