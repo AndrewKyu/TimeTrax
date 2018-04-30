@@ -9,7 +9,6 @@
 import UIKit
 import FirebaseAuthUI
 import FirebaseGoogleAuthUI
-import FirebaseFirestore
 import FSCalendar
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
@@ -132,5 +131,13 @@ class TaskTableViewCell: UITableViewCell {
     }
     
 
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        UIApplication.shared.statusBarStyle = .default
+//    }
+//
+//    override var preferredStatusBarStyle: UIStatusBarStyle{
+//        return .default
+//    }
 }
 

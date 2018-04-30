@@ -20,17 +20,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "goToHome", sender: self)
         //stores anything from emailTextField and passwordTextField into email
-        if let email = emailTextField.text, let pass = passwordTextField.text{
-            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
-                if let u = user{
+//        if let email = emailTextField.text, let pass = passwordTextField.text{
+//            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+//                if let u = user{
                     self.performSegue(withIdentifier: "goToHome", sender: self)
-                }else{
-                    let alertController = UIAlertController(title: "Login Failed", message: "Incorrect Email or Password", preferredStyle: UIAlertControllerStyle.alert)
-                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-                    self.present(alertController, animated: true, completion: nil)
-                }
-            }
-        }
+//                }else{
+//                    let alertController = UIAlertController(title: "Login Failed", message: "Incorrect Email or Password", preferredStyle: UIAlertControllerStyle.alert)
+//                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//                    self.present(alertController, animated: true, completion: nil)
+//                }
+//            }
+//        }
     }
     
     @IBAction func goToRegisterButtonTapped(_ sender: Any) {

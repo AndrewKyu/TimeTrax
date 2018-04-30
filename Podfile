@@ -10,7 +10,8 @@ target 'TimeTrax' do
   pod 'SDWebImage'
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Google'
-  pod 'Firebase/Firestore'
   pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
 
 end
