@@ -9,6 +9,14 @@
 import Foundation
 //Class to hold task data
 
+struct TaskModel{
+    let taskName: String?
+    let startDate: String?
+    let dueDate: String?
+    let priority: String?
+    let projectName: String?
+}
+
 struct taskType{
     var name: String
     var dueDate: Date

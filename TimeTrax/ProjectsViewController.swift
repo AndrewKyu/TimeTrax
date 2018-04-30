@@ -23,11 +23,15 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
     
     var projects = [ProjectModel]()
     
+
+
+    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return projects.count
     }
     
+
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
