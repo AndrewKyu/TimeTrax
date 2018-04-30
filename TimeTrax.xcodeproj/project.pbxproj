@@ -16,8 +16,11 @@
 		1F3FFEEE208EA9A500899E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */; };
 		1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */; };
 		1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */; };
+		1FFA93A72096A8E800914A78 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A62096A8E800914A78 /* RoundButton.swift */; };
+		1FFA93A92096AC9600914A78 /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A82096AC9600914A78 /* CreateProjectViewController.swift */; };
+		1FFA93AB2096AD1300914A78 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93AA2096AD1300914A78 /* ProjectTableViewCell.swift */; };
+		1FFA93AD2096AE6F00914A78 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93AC2096AE6F00914A78 /* ProjectsViewController.swift */; };
 		3F6B94192092DB0000F0C1AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B94182092DB0000F0C1AE /* Images.xcassets */; };
-		487F978520954BA200FB8D14 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F978420954BA200FB8D14 /* LocalCollection.swift */; };
 		487F978B209563F800FB8D14 /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */; };
 		48D3678920951C60000B74D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3678820951C60000B74D9 /* User.swift */; };
 		48D3678B209526E3000B74D9 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3678A209526E3000B74D9 /* Project.swift */; };
@@ -40,8 +43,11 @@
 		1F3FFEED208EA9A500899E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1FFA93A62096A8E800914A78 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		1FFA93A82096AC9600914A78 /* CreateProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
+		1FFA93AA2096AD1300914A78 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		1FFA93AC2096AE6F00914A78 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		3F6B94182092DB0000F0C1AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		487F978420954BA200FB8D14 /* LocalCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
 		487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
 		48D3678820951C60000B74D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		48D3678A209526E3000B74D9 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
@@ -88,15 +94,17 @@
 				1F3FFED9208EA31900899E70 /* AppDelegate.swift */,
 				1F3FFEDB208EA31900899E70 /* ViewController.swift */,
 				48D3678820951C60000B74D9 /* User.swift */,
-				487F978420954BA200FB8D14 /* LocalCollection.swift */,
 				BBCA0F3220966B98004F4ACF /* Task.swift */,
 				1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */,
 				1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */,
 				BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */,
 				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
+				1FFA93A82096AC9600914A78 /* CreateProjectViewController.swift */,
+				1FFA93AA2096AD1300914A78 /* ProjectTableViewCell.swift */,
+				1FFA93AC2096AE6F00914A78 /* ProjectsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
+				1FFA93A62096A8E800914A78 /* RoundButton.swift */,
 				487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */,
-				BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */,
 				1F3FFEE0208EA31B00899E70 /* Assets.xcassets */,
 				1F3FFEE2208EA31B00899E70 /* LaunchScreen.storyboard */,
 				1F3FFEE5208EA31B00899E70 /* Info.plist */,
@@ -204,33 +212,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -287,15 +283,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
+				1FFA93AB2096AD1300914A78 /* ProjectTableViewCell.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
-				487F978520954BA200FB8D14 /* LocalCollection.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
 				BBCA0F3320966B98004F4ACF /* Task.swift in Sources */,
 				BB3D5AA02096473B000FB736 /* TaskDetailViewController.swift in Sources */,
+				1FFA93AD2096AE6F00914A78 /* ProjectsViewController.swift in Sources */,
+				1FFA93A72096A8E800914A78 /* RoundButton.swift in Sources */,
 				48D3678920951C60000B74D9 /* User.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,
 				1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */,
 				487F978B209563F800FB8D14 /* ProjectDetailsViewController.swift in Sources */,
+				1FFA93A92096AC9600914A78 /* CreateProjectViewController.swift in Sources */,
 				1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */,
 				48D3678B209526E3000B74D9 /* Project.swift in Sources */,
 			);
