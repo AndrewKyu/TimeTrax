@@ -47,6 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = taskViewController.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
         //print(projects[indexPath.row].descriptionName)
+        cell.taskNameLabel.text = "Task: \(tasks[indexPath.row].taskName ?? "")"
         cell.projectNameLabel.text = "Project: \(tasks[indexPath.row].projectName ?? "")"
         cell.priorityLabel.text = "Priority: \(tasks[indexPath.row].priority ?? "")"
         cell.dueDate.text = "Due Date: \(tasks[indexPath.row].dueDate ?? "")"
@@ -56,7 +57,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     fileprivate func fetchData(){
-        let reference = Database.database().reference().child("Task")
+        let reference = Database.database().reference().child("task")
         reference.observeSingleEvent(of: DataEventType.value) { (snapshot) in
             //print(snapshot.value)
             guard let tasksDictionary = snapshot.value as? [String: Any] else{ return }
