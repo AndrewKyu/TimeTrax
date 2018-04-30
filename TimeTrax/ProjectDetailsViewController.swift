@@ -8,17 +8,11 @@
 
 import UIKit
 import SDWebImage
-import FirebaseFirestore
 import Firebase
 import FirebaseAuthUI
 
 class ProjectDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
-    
-    var project: Project?
-    var projectReference: DocumentReference?
-    
-    var localCollection: LocalCollection <User>!
     
 
     @IBOutlet weak var NavBar: UINavigationBar!
@@ -35,39 +29,12 @@ class ProjectDetailsViewController: UIViewController, UITableViewDataSource, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = project?.title
-        
-        tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 20
-        
-        let query = projectReference!.collection("Users")
-        localCollection = LocalCollection(query: query) { [unowned self] (changes) in
-            if self.localCollection.count == 0 {
-                return
-            } else {
-                self.tableView.backgroundView = nil
-            }
-            var indexPaths: [IndexPath] = []
-            
-            for addition in changes.filter({ $0.type == .added }) {
-                let index = self.localCollection.index(of: addition.document)!
-                let indexPath = IndexPath(row: index, section: 0)
-                indexPaths.append(indexPath)
-            }
-            
-            self.tableView.insertRows(at: indexPaths, with: .automatic)
-        }
-    
     }
     
-    deinit {
-        localCollection.stopListening()
-    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        localCollection.listen()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -79,13 +46,11 @@ class ProjectDetailsViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return localCollection.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TeamMemberCell", for: indexPath) as! TeamMemberViewCell
-        let user = localCollection[indexPath.row]
-        cell.populate(user: user)
+        let cell = UITableViewCell()
         return cell
     }
 
