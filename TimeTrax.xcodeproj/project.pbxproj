@@ -22,6 +22,10 @@
 		1FFA93A320957E5F00914A78 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */; };
 		1FFA93A52096680700914A78 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A42096680700914A78 /* ProjectModel.swift */; };
 		3F6B94192092DB0000F0C1AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B94182092DB0000F0C1AE /* Images.xcassets */; };
+		487F978520954BA200FB8D14 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F978420954BA200FB8D14 /* LocalCollection.swift */; };
+		487F978B209563F800FB8D14 /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */; };
+		48D3678920951C60000B74D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3678820951C60000B74D9 /* User.swift */; };
+		48D3678B209526E3000B74D9 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3678A209526E3000B74D9 /* Project.swift */; };
 		7A8825128D856817B4BBA196 /* Pods_TimeTrax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */; };
 		BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */; };
 		BBC1A35E2092FF50006FB62F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */; };
@@ -46,6 +50,10 @@
 		1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		1FFA93A42096680700914A78 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		3F6B94182092DB0000F0C1AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		487F978420954BA200FB8D14 /* LocalCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
+		487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
+		48D3678820951C60000B74D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		48D3678A209526E3000B74D9 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTrax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B928AE1CC4E297AEBA20FEBB /* Pods-TimeTrax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.debug.xcconfig"; sourceTree = "<group>"; };
 		BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPWViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,8 @@
 			children = (
 				1F3FFED9208EA31900899E70 /* AppDelegate.swift */,
 				1F3FFEDB208EA31900899E70 /* ViewController.swift */,
+				48D3678820951C60000B74D9 /* User.swift */,
+				487F978420954BA200FB8D14 /* LocalCollection.swift */,
 				1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */,
 				1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */,
 				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
@@ -95,6 +105,7 @@
 				1FFA93A220957E5F00914A78 /* ProjectTableViewCell.swift */,
 				1FFA93A0209412BA00914A78 /* CreateProjectsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
+				487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */,
 				BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */,
 				1F3FFEE0208EA31B00899E70 /* Assets.xcassets */,
 				1F3FFEE2208EA31B00899E70 /* LaunchScreen.storyboard */,
@@ -103,6 +114,7 @@
 				BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */,
 				3F6B94182092DB0000F0C1AE /* Images.xcassets */,
 				1FFA93A42096680700914A78 /* ProjectModel.swift */,
+				48D3678A209526E3000B74D9 /* Project.swift */,
 			);
 			path = TimeTrax;
 			sourceTree = "<group>";
@@ -137,6 +149,7 @@
 				1F3FFED4208EA31900899E70 /* Resources */,
 				364FB880098D9F5429FDB8CD /* [CP] Embed Pods Frameworks */,
 				23BC785B74A78078DDD6AAA5 /* [CP] Copy Pods Resources */,
+				E5D6E0B70407B603D16AF7D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +215,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -219,22 +239,48 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D6E0B70407B603D16AF7D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC5584225A3159BC6F279492 /* [CP] Check Pods Manifest.lock */ = {
@@ -269,11 +315,15 @@
 				1FFA93A1209412BA00914A78 /* CreateProjectsViewController.swift in Sources */,
 				1FFA93A52096680700914A78 /* ProjectModel.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
+				487F978520954BA200FB8D14 /* LocalCollection.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
+				48D3678920951C60000B74D9 /* User.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,
 				1FFA93A320957E5F00914A78 /* ProjectTableViewCell.swift in Sources */,
 				1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */,
+				487F978B209563F800FB8D14 /* ProjectDetailsViewController.swift in Sources */,
 				1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */,
+				48D3678B209526E3000B74D9 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
