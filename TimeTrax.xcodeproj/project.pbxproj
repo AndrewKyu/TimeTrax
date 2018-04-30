@@ -17,6 +17,7 @@
 		1F3FFEF0208EADCD00899E70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */; };
 		1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */; };
 		1F9D73EE2096CDEE0020BC6F /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D73ED2096CDEE0020BC6F /* CreateTaskViewController.swift */; };
+		1F9D73F02096F04C0020BC6F /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D73EF2096F04C0020BC6F /* MembersViewController.swift */; };
 		1FFA93A72096A8E800914A78 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A62096A8E800914A78 /* RoundButton.swift */; };
 		1FFA93A92096AC9600914A78 /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93A82096AC9600914A78 /* CreateProjectViewController.swift */; };
 		1FFA93AB2096AD1300914A78 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA93AA2096AD1300914A78 /* ProjectTableViewCell.swift */; };
@@ -44,6 +45,7 @@
 		1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1F9D73ED2096CDEE0020BC6F /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		1F9D73EF2096F04C0020BC6F /* MembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
 		1FFA93A62096A8E800914A78 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		1FFA93A82096AC9600914A78 /* CreateProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
 		1FFA93AA2096AD1300914A78 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */,
 				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
 				1FFA93A82096AC9600914A78 /* CreateProjectViewController.swift */,
+				1F9D73EF2096F04C0020BC6F /* MembersViewController.swift */,
 				1FFA93AA2096AD1300914A78 /* ProjectTableViewCell.swift */,
 				1FFA93AC2096AE6F00914A78 /* ProjectsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9D73F02096F04C0020BC6F /* MembersViewController.swift in Sources */,
 				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
 				1FFA93AB2096AD1300914A78 /* ProjectTableViewCell.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
