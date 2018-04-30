@@ -35,7 +35,7 @@ class CreateProjectsViewController: UIViewController {
             "descriptionName" : descriptionName
             
         ]
-        
+       //adds groupName as project name
         Database.database().reference().child("project").child(groupName).updateChildValues(project) { (error, reference) in
             if let error = error {
                 print(error)

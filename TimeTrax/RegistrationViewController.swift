@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
@@ -22,27 +23,35 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: false, completion: nil)
     }
     
-    @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     
     @IBAction func registerButtonTapped(_ sender: Any) {
         
         if let email = emailTextField.text, let pass = passwordTextField.text{
-//            let alert = UIAlertController(title: "Error", message: "You did not fill out all fields", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
-//
-//            if email == nil{
-//                self.present(alert, animated: true)
-//            }
             
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
+                
+                guard let fullName = self.fullNameTextField.text else { return }
+                guard let email = self.emailTextField.text else { return }
+                guard let password = self.passwordTextField.text else { return }
+                let account = [
+                    "fullName" : fullName,
+                    "email" : email,
+                    "password" : password
+                ]
+                
+            Database.database().reference().child("user").child(fullName).updateChildValues(account)
                 self.performSegue(withIdentifier: "goToHome", sender: self)
             }
         }else{
             //Error: check error and show message
         }
+        
+        
     }
     
     override func viewDidLoad() {

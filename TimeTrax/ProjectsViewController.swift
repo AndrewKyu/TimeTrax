@@ -34,6 +34,7 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
+    //Function to display data onto the cell
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! ProjectTableViewCell
         //print(projects[indexPath.row].descriptionName)
@@ -43,10 +44,12 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    //Function to fetch data from Firebase
     fileprivate func fetchData(){
         let reference = Database.database().reference().child("project")
         reference.observeSingleEvent(of: DataEventType.value) { (snapshot) in
-            //print(snapshot.value)
+            
+            print(snapshot.value)
             guard let projectsDictionary = snapshot.value as? [String: Any] else{ return }
             //print(projectsDictionary)
            
@@ -55,7 +58,7 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
             
             projectsDictionary.forEach({ (key, value) in
                 if let individualProjects = value as? [String: String]{
-                    print(individualProjects)
+                    //print(individualProjects)
                     guard let groupName = individualProjects["groupName"] else{
                         return
                     }
@@ -65,7 +68,7 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
                     guard let groupMember = individualProjects["groupMember"] else{
                         return
                     }
-                    print(groupName, descriptionName, groupMember)
+                   // print(groupName, descriptionName, groupMember)
                     let project = ProjectModel(groupName: groupName, descriptionName: descriptionName, groupMember: groupMember)
                     
                     self.projects.append(project)
