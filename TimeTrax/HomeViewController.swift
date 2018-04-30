@@ -23,6 +23,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 100
     }
     
+    @IBAction func createTaskTapped(_ sender: Any) {
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showTaskDetail", sender: self)
     }

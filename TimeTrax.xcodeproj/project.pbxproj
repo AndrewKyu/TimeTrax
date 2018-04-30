@@ -28,6 +28,7 @@
 		BB3D5AA02096473B000FB736 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */; };
 		BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */; };
 		BBCA0F3320966B98004F4ACF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA0F3220966B98004F4ACF /* Task.swift */; };
+		FA256FE72096CAE60090DA2C /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA256FE62096CAE60090DA2C /* NewTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPWViewController.swift; sourceTree = "<group>"; };
 		BBCA0F3220966B98004F4ACF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FA256FE62096CAE60090DA2C /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */,
 				3F6B94182092DB0000F0C1AE /* Images.xcassets */,
 				48D3678A209526E3000B74D9 /* Project.swift */,
+				FA256FE62096CAE60090DA2C /* NewTaskViewController.swift */,
 			);
 			path = TimeTrax;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
 				1FFA93AB2096AD1300914A78 /* ProjectTableViewCell.swift in Sources */,
+				FA256FE72096CAE60090DA2C /* NewTaskViewController.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
 				BBCA0F3320966B98004F4ACF /* Task.swift in Sources */,
