@@ -122,5 +122,14 @@ class TaskTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .default
+    }
 }
 

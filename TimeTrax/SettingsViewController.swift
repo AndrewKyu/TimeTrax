@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
+
         do{
             try Auth.auth().signOut()
             self.dismiss(animated: true, completion: nil)

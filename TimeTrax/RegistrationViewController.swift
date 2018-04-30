@@ -30,15 +30,24 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func registerButtonTapped(_ sender: Any) {
         
         if let email = emailTextField.text, let pass = passwordTextField.text{
-//            let alert = UIAlertController(title: "Error", message: "You did not fill out all fields", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
-//
-//            if email == nil{
-//                self.present(alert, animated: true)
-//            }
-            
+            let alert = UIAlertController(title: "Error", message: "You did not fill out all fields", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+
+            if (!isValidEmail(check: email)){
+                let alert = UIAlertController(title: "Error", message: "Not a valid Email", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            }
+            else if (pass.isEmpty){
+                let alert = UIAlertController(title: "Error", message: "You did not fill out all fields", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            }
+            weak var pvc = self.presentingViewController
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
-                self.performSegue(withIdentifier: "goToHome", sender: self)
+                self.dismiss(animated: false, completion: {
+                    pvc?.performSegue(withIdentifier: "goToHome", sender: nil)
+                })
+
             }
         }else{
             //Error: check error and show message
@@ -59,6 +68,13 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func isValidEmail(check email: String) ->Bool{
+        let emailRegEx = "[A-Z0-9a-z._%=-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

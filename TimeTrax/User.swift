@@ -15,7 +15,6 @@ struct User{
     var phoneNumber: String
     var jobTitle: String //could be enum
     var admin: Bool
-    var profilePicture: URL?
     
     var dictionary: [String: Any] {
         return [
@@ -25,7 +24,6 @@ struct User{
             "phoneNumber" : phoneNumber,
             "jobTitle" : jobTitle,
             "admin" : admin,
-            "profilePicture" : profilePicture,
         ]
     }
 }
@@ -38,8 +36,7 @@ extension User: DocumentSerializable {
             let firstName = dictionary["firstName"] as? String,
             let phoneNumber = dictionary["phoneNumber"] as? String,
             let jobTitle = dictionary["jobTitle"] as? String,
-            let admin = dictionary["admin"] as? Bool,
-            let profilePicture = dictionary["profilePicture"] as? URL else { return nil }
+            let admin = dictionary["admin"] as? Bool else { return nil }
     
     
         self.init( email: email,
@@ -47,7 +44,6 @@ extension User: DocumentSerializable {
               lastName: lastName,
               phoneNumber: phoneNumber,
               jobTitle: jobTitle,
-              admin: admin,
-              profilePicture: profilePicture)
+              admin: admin)
     }
 }
