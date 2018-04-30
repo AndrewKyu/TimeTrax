@@ -220,11 +220,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zRo-dL-0Zs"/>
                     </view>
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="homeIcon" id="xeP-5t-g99"/>
-=======
                     <navigationItem key="navigationItem" id="sTv-HO-3Az"/>
->>>>>>> master
                     <connections>
                         <outlet property="taskViewController" destination="znC-zR-iaS" id="CHZ-Rp-nsx"/>
                     </connections>
@@ -344,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wC-IA-lAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711.20000000000005" y="1671.8140929535234"/>
+            <point key="canvasLocation" x="418" y="1672"/>
         </scene>
         <!--Project Details View Controller-->
         <scene sceneID="o4V-96-jUy">
@@ -561,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2s-fu-5uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.60000000000002" y="1671.8140929535234"/>
+            <point key="canvasLocation" x="1186" y="1672"/>
         </scene>
         <!--Create Projects View Controller-->
         <scene sceneID="8nm-lo-fOA">
@@ -666,11 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGZ-FP-OB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="942" y="2469"/>
-=======
             <point key="canvasLocation" x="1880.8" y="1671.8140929535234"/>
->>>>>>> master
         </scene>
         <!--Settings-->
         <scene sceneID="3PR-zG-h9R">
@@ -988,7 +980,6 @@
     </scenes>
     <resources>
         <image name="CalendarIcon" width="24" height="21"/>
-        <image name="homeIcon" width="21" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Uue-dc-uU6"/>
