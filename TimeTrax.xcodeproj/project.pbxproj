@@ -22,8 +22,9 @@
 		48D3678920951C60000B74D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3678820951C60000B74D9 /* User.swift */; };
 		48D3678B209526E3000B74D9 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3678A209526E3000B74D9 /* Project.swift */; };
 		7A8825128D856817B4BBA196 /* Pods_TimeTrax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */; };
+		BB3D5AA02096473B000FB736 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */; };
 		BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */; };
-		BBC1A35E2092FF50006FB62F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */; };
+		BBCA0F3320966B98004F4ACF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA0F3220966B98004F4ACF /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +47,9 @@
 		48D3678A209526E3000B74D9 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		8ECBAAC1538B37A6015140D6 /* Pods_TimeTrax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTrax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B928AE1CC4E297AEBA20FEBB /* Pods-TimeTrax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTrax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTrax/Pods-TimeTrax.debug.xcconfig"; sourceTree = "<group>"; };
+		BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		BB5215732092C9CC00E20472 /* SettingsPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPWViewController.swift; sourceTree = "<group>"; };
-		BBC1A35D2092FF50006FB62F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		BBCA0F3220966B98004F4ACF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +89,10 @@
 				1F3FFEDB208EA31900899E70 /* ViewController.swift */,
 				48D3678820951C60000B74D9 /* User.swift */,
 				487F978420954BA200FB8D14 /* LocalCollection.swift */,
+				BBCA0F3220966B98004F4ACF /* Task.swift */,
 				1F3FFEEB208EA94200899E70 /* RegistrationViewController.swift */,
 				1F3FFEEF208EADCD00899E70 /* HomeViewController.swift */,
+				BB3D5A9F2096473B000FB736 /* TaskDetailViewController.swift */,
 				1F3FFEF1208ED46700899E70 /* SettingsViewController.swift */,
 				1F3FFEDD208EA31900899E70 /* Main.storyboard */,
 				487F978A209563F800FB8D14 /* ProjectDetailsViewController.swift */,
@@ -282,11 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC1A35E2092FF50006FB62F /* TaskTableViewCell.swift in Sources */,
 				BB5215742092C9CC00E20472 /* SettingsPWViewController.swift in Sources */,
 				1F3FFEEC208EA94200899E70 /* RegistrationViewController.swift in Sources */,
 				487F978520954BA200FB8D14 /* LocalCollection.swift in Sources */,
 				1F3FFEDC208EA31900899E70 /* ViewController.swift in Sources */,
+				BBCA0F3320966B98004F4ACF /* Task.swift in Sources */,
+				BB3D5AA02096473B000FB736 /* TaskDetailViewController.swift in Sources */,
 				48D3678920951C60000B74D9 /* User.swift in Sources */,
 				1F3FFEDA208EA31900899E70 /* AppDelegate.swift in Sources */,
 				1F3FFEF2208ED46700899E70 /* SettingsViewController.swift in Sources */,
