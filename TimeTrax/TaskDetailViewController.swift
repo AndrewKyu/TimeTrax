@@ -29,8 +29,16 @@ class TaskDetailViewController: UIViewController {
         super.viewDidLoad()
         taskName.text = task?.name
         projectName.text = "Project: \(task?.projectName ?? "")"
-        dueDate.text = "Due Date: \(task?.dueDate)"      
         
+        
+        let dateformatter = DateFormatter()
+        
+        dateformatter.dateStyle = DateFormatter.Style.short
+
+        
+        let now = dateformatter.string(from: task?.dueDate as! Date)
+        
+        dueDate.text = "Due Date: \(now)"
     }
 
 }

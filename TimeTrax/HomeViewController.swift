@@ -96,19 +96,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     
-    var structArray =
-        [taskType(taskName: "Task 137", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task 140", inProject: "Homework",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
-         taskType(taskName: "Task 137B", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task 195A", inProject: "Senior Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
-         taskType(taskName: "Task 137C", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task 166", inProject: "Homework",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
-         taskType(taskName: "Task 137D", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
-         taskType(taskName: "Task Sleep", inProject: "Self",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 3),
-         taskType(taskName: "Task 137E", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1)
+    static var structArray =
+        [taskType(taskName: "Task 137", inProject: "Swift Project",taskDueDate: NSDate(), taskStartDate: NSDate(), taskprirority: 1),
+         taskType(taskName: "Task 140", inProject: "Homework",taskDueDate: NSDate(), taskStartDate: NSDate(), taskprirority: 2),
+         taskType(taskName: "Task 137B", inProject: "Swift Project",taskDueDate: NSDate(), taskStartDate: NSDate(), taskprirority: 1),
+         taskType(taskName: "Task 195A", inProject: "Senior Project",taskDueDate: NSDate(), taskStartDate: NSDate(), taskprirority: 2),
+         taskType(taskName: "Task 137C", inProject: "Swift Project",taskDueDate: NSDate(), taskStartDate: NSDate(), taskprirority: 1),
+//         taskType(taskName: "Task 166", inProject: "Homework",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 2),
+//         taskType(taskName: "Task 137D", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1),
+//         taskType(taskName: "Task Sleep", inProject: "Self",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 3),
+//         taskType(taskName: "Task 137E", inProject: "Swift Project",taskDueDate: Date(), taskStartDate: Date(), taskprirority: 1)
     ]
-     
-
 }
 
 

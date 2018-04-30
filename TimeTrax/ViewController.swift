@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Log_in_box: UIView!
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-
+        self.performSegue(withIdentifier: "goToHome", sender: self)
         //stores anything from emailTextField and passwordTextField into email
         if let email = emailTextField.text, let pass = passwordTextField.text{
             Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in

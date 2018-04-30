@@ -11,19 +11,19 @@ import Foundation
 
 struct taskType{
     var name: String
-    var dueDate: Date
-    var startDate: Date
+    var dueDate: NSDate
+    var startDate: NSDate
     var priority: Int
     var projectName: String
     var taskInProgress: Bool
-    var timeStarted: Date?
+    var timeStarted: NSDate?
     var totalTime: Int?
     var projectTimes: [taskTimes]?
     
     init(taskName name: String,
          inProject pjName: String,
-         taskDueDate dueDate: Date,
-         taskStartDate startDate: Date,
+         taskDueDate dueDate: NSDate,
+         taskStartDate startDate: NSDate,
          taskprirority priority: Int) {
         
         self.name = name
