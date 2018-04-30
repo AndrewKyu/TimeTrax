@@ -28,22 +28,5 @@ struct User{
     }
 }
 
-extension User: DocumentSerializable {
-    init?(dictionary: [String: Any]) {
-        guard
-            let email = dictionary["email"] as? String,
-            let lastName = dictionary["lastName"] as? String,
-            let firstName = dictionary["firstName"] as? String,
-            let phoneNumber = dictionary["phoneNumber"] as? String,
-            let jobTitle = dictionary["jobTitle"] as? String,
-            let admin = dictionary["admin"] as? Bool else { return nil }
-    
-    
-        self.init( email: email,
-              firstName: firstName,
-              lastName: lastName,
-              phoneNumber: phoneNumber,
-              jobTitle: jobTitle,
-              admin: admin)
-    }
-}
+
+
